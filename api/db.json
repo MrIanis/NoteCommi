@@ -1,33 +1,22 @@
 {
   "notes": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "AZERTY",
+      "content": "zgegseg",
+      "id": 1
     },
     {
-      "title": "TEST",
-      "content": "MADNJBAIF",
+      "title": "LKJHG",
+      "content": "eg``\r",
       "id": 2
     },
     {
-      "title": "ETSTZANF",
-      "content": "12345678I9",
+      "title": "AZER",
+      "content": "KJHGF",
       "id": 3
-    },
-    {
-      "title": "ZABUDHEKA",
-      "content": "ADKJBZ",
-      "id": 4
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "noteId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }
