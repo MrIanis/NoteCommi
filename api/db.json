@@ -1,16 +1,31 @@
 {
-  "posts": [
+  "notes": [
     {
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "title": "TEST",
+      "content": "MADNJBAIF",
+      "id": 2
+    },
+    {
+      "title": "ETSTZANF",
+      "content": "12345678I9",
+      "id": 3
+    },
+    {
+      "title": "ZABUDHEKA",
+      "content": "ADKJBZ",
+      "id": 4
     }
   ],
   "comments": [
     {
       "id": 1,
       "body": "some comment",
-      "postId": 1
+      "noteId": 1
     }
   ],
   "profile": {
