@@ -16,6 +16,12 @@ function App() {
     setSelectedNote(note);
   };
 
+  const handleNoteDelete = async (noteId) => {
+    await fetch(`/notes/${noteId}`, { method: 'DELETE' });
+    setNotes(notes.filter((note) => note.id !== noteId));
+    setSelectedNote(null);
+  };
+
   useEffect(() => {
     fetchNotes();
   }, []);
@@ -71,6 +77,12 @@ function App() {
         {Array.isArray(notes) && notes.map((note) => (
           <div key={note.id}>
             <button><Link to={`/notes/${note.id}`} onClick={() => handleNoteClick(note)}>{note.title}</Link></button>
+            <button onClick={() => handleNoteDelete(note.id)}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" width="24px" height="24px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41l5.59 5.59L5 17.59 6.41 19l5.59-5.59 5.59 5.59 1.41-1.41L13.41 12l5.59-5.59z"/>
+              </svg>
+            </button>
           </div>
         ))}
       </aside>
